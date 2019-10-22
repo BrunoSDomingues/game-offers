@@ -9,7 +9,7 @@ module.exports = function checkLogin(data) {
 
     if (valid.isEmpty(data.email)) {
         errors.email = "O campo email é obrigatório!";
-    } else if (valid.isEmail(data.email)) {
+    } else if (!valid.isEmail(data.email)) {
         errors.email = "Email inválido!";
     }
 

@@ -9,9 +9,9 @@ class App extends Component {
         <div className="container">
           <h2>MERN Stack - Game Offers</h2>
         </div>
-        <Route path="/" exact component={DailyOffers}></Route>
+        {/* <Route path="/" exact component={DailyOffers}></Route>
         <Route path="/search" exact component={SearchOffers}></Route>
-        <Route path="/favorites" exact component={SavedOffers}></Route>
+        <Route path="/favorites" exact component={SavedOffers}></Route> */}
       </Router>
     );
   }

@@ -1,8 +1,8 @@
-const fetch = require("node-fetch");
+let fetch = require("node-fetch");
 
 // Deals
 
-const url_deals = new URL("http://www.cheapshark.com/api/1.0/deals");
+let url_deals = new URL("http://www.cheapshark.com/api/1.0/deals");
 
 function getDeals(params){
     Object.keys(params).forEach(key => url_deals.searchParams.append(key, params[key]))
@@ -18,7 +18,7 @@ function getDealInfo(id){
 
 // Games
 
-const url_games = new URL("http://www.cheapshark.com/api/1.0/games");
+let url_games = new URL("http://www.cheapshark.com/api/1.0/games");
 
 function getGamesList(params){
     Object.keys(params).forEach(key => url_games.searchParams.append(key, params[key]))
@@ -29,9 +29,14 @@ function getGamesList(params){
 function getGameInfo(id){
     Object.keys(id).forEach(key => url_games.searchParams.append(key, id[key]))
     
-    fetch(url_games).then(data =>{return data.json()}).catch(err =>{console.log(err)})
+    fetch(url_games).then(data =>{return data.json()}).then(resp => {console.log(resp)}).catch(err =>{console.log(err)})
 }
 
+function getGamesInfo(ids){
+    let new_url = url_games + "?ids=" + ids;
+    
+    fetch(new_url).then(data =>{return data.json()}).catch(err =>{console.log(err)})
+}
 // Alerts
 
 function controlAlerts(params){
@@ -41,3 +46,5 @@ function controlAlerts(params){
 
     fetch(url_alerts).then(data => {return data}).catch(err => {console.log(err)})
 }
+
+let test = getGameInfo({id:128});

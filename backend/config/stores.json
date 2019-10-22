@@ -1,0 +1,56 @@
+[
+    {
+        "storeID": "1",
+        "storeName": "Steam",
+        "images": {
+            "banner": "/img/stores/banners/0.png",
+            "logo": "/img/stores/logos/0.png",
+            "icon": "/img/stores/icons/0.png"
+        }
+    },
+    {
+        "storeID": "4",
+        "storeName": "Amazon",
+        "images": {
+            "banner": "/img/stores/banners/3.png",
+            "logo": "/img/stores/logos/3.png",
+            "icon": "/img/stores/icons/3.png"
+        }
+    },
+    {
+        "storeID": "8",
+        "storeName": "Origin",
+        "images": {
+            "banner": "/img/stores/banners/7.png",
+            "logo": "/img/stores/logos/7.png",
+            "icon": "/img/stores/icons/7.png"
+        }
+    },
+    {
+        "storeID": "11",
+        "storeName": "Humble Store",
+        "images": {
+            "banner": "/img/stores/banners/10.png",
+            "logo": "/img/stores/logos/10.png",
+            "icon": "/img/stores/icons/10.png"
+        }
+    },
+    {
+        "storeID": "13",
+        "storeName": "Uplay",
+        "images": {
+            "banner": "/img/stores/banners/12.png",
+            "logo": "/img/stores/logos/12.png",
+            "icon": "/img/stores/icons/12.png"
+        }
+    },
+    {
+        "storeID": "25",
+        "storeName": "Epic Games Store",
+        "images": {
+            "banner": "/img/stores/banners/24.png",
+            "logo": "/img/stores/logos/24.png",
+            "icon": "/img/stores/icons/24.png"
+        }
+    }
+]

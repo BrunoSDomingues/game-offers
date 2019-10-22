@@ -56,13 +56,16 @@ router.post("/login", (req, res) => {
             if (isMatch) {
                 const payload = { id: user.id, name: user.name };
 
-                jwt.sign(payload, keys.passKey, { expiresIn: 31556926 },
-                    (err, token) => { res.json(
-                        { success: true, token: "Token: " + token }
-                    )}
+                jwt.sign(payload, keys.secretOrKey, { expiresIn: 31556926 },
+                    (err, token) => {
+                        res.json({
+                            success: true,
+                            token: "Token: " + token
+                        })
+                    }
                 )
             } else {
-                return res.status(400).json({ wrongpass : "Senha incorreta!"})
+                return res.status(400).json({ wrongpass: "Senha incorreta!" })
             }
         })
     });

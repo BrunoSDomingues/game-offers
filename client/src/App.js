@@ -13,7 +13,8 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
-import SearchOffers from "./components/redirects/SearchOffers";
+import SearchOffers from "./components/deals/SearchOffers";
+import OfferResults from "./components/deals/OfferResults";
 
 import "./App.css";
 
@@ -47,6 +48,7 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/search-offers" component={SearchOffers} />
+            <Route exact path="/offer-results" component={OfferResults} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>

@@ -15,8 +15,8 @@ function checkRequired(name){
 }
 
 class SearchOffers extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             errors : []
         };
@@ -45,12 +45,9 @@ class SearchOffers extends Component {
                 params = {title : name, pageSize : qty, upperPrice : max}
             }
             console.log(params);
-            this.props.history.push({
-                pathname: "/offer-results",
-                data : params
-            })
+            this.props.history.push("/offer-results")
         }
-    }
+    }      
 
     render() {
         const {errors} = this.state;

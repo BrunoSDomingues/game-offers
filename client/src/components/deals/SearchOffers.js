@@ -44,8 +44,7 @@ class SearchOffers extends Component {
             } else {
                 params = {title : name, pageSize : qty, upperPrice : max}
             }
-            console.log(params);
-            this.props.history.push("/offer-results")
+            this.props.history.push({pathname: "/offer-results", state: params})
         }
     }      
 

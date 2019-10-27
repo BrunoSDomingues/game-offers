@@ -3,14 +3,21 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-import getJSON from "../../get-data";
-import SearchOffers from "./SearchOffers";
+import { get } from "../../get-data.js";
 
 class OfferResults extends Component {
     constructor(props){
         super(props)
         const url_deals = new URL("http://www.cheapshark.com/api/1.0/deals");
-        console.log(this.props.location.state);
+        let params = this.props.location.state;
+
+        get(url_deals, params)
+            .then(out =>{
+                console.log(out)
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
     
     render() {  

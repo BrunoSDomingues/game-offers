@@ -1,5 +1,5 @@
 const http = require("http");
-// const isEmpty = require("is-empty");
+const isEmpty = require("is-empty");
 
 const url_deals = new URL("http://www.cheapshark.com/api/1.0/deals");
 const url_games = new URL("http://www.cheapshark.com/api/1.0/games");
@@ -63,18 +63,18 @@ function getJSON(url, params) {
 
 // Example:
 
-// let p = { id: "X8sebHhbc1Ga0dTkgg59WgyM506af9oNZZJLU9uSrX8%25253D" };
-// getJSON(url_deals, p)
-//     .then(resp => {
-//         if (!isEmpty(resp)) {
-//             console.log(resp)
-//         } else { 
-//             console.log("Request retornou vazio")
-//         }
-//     })
-//     .catch(err => {
-//         console.log(err)
-//     })
+let p = { id: "X8sebHhbc1Ga0dTkgg59WgyM506af9oNZZJLU9uSrX8%25253D" };
+getJSON(url_deals, p)
+    .then(resp => {
+        if (!isEmpty(resp)) {
+            console.log(resp)
+        } else { 
+            console.log("Request retornou vazio")
+        }
+    })
+    .catch(err => {
+        console.log(err)
+    })
 
 // Returns if the alert was successfully set/deleted
 
@@ -133,3 +133,5 @@ function controlAlert(url, params) {
 //     .catch(err => {
 //         console.log(err)
 //     })
+
+module.exports = { get : getJSON }

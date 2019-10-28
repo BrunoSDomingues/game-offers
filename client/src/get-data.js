@@ -135,3 +135,17 @@ function controlAlert(url, params) {
 //     })
 
 module.exports = { get : getJSON }
+
+// // Possible solution!!!
+// const request = require('request')
+// let options = {
+//     method : 'GET',
+//     url : 'http://www.cheapshark.com/api/1.0/deals',
+//     qs: {id : "X8sebHhbc1Ga0dTkgg59WgyM506af9oNZZJLU9uSrX8="}
+// }
+
+// request(options, function (error, response, body){
+//     if (error) throw new Error(error);
+
+//     console.log(body)
+// });

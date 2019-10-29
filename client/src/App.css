@@ -1,0 +1,54 @@
+.result {
+    vertical-align: top;
+    margin: 10px 20px;
+    width: 280px;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#results {
+    display: block;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.listing {
+    cursor: pointer;
+    height: 130px;
+}
+
+.thumbnail {
+    height: 80px;
+    min-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.game-title {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.prices {
+    display: block;
+    margin-top: 5px;
+}
+
+.price-line {
+    height: 30px;
+    padding-top: 5px;
+}
+
+.store {
+    text-align: left;
+}
+
+.price{
+    text-align: right;
+}
+
+.result td {
+    padding: 6px 5px;
+}

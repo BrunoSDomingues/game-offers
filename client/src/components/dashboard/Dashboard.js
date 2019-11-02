@@ -44,7 +44,7 @@ class Dashboard extends Component {
               onClick={this.onOfferClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >Pesquisar ofertas</button>
-            <br></br>
+            {/* <br></br>
             <br></br>
             <button
               style={{
@@ -70,7 +70,7 @@ class Dashboard extends Component {
             >Editar alertas</button>
             <br></br>
             <br></br>
-            <br></br>
+            <br></br> */}
             <br></br>
             <br></br>
             <button

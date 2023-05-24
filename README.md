@@ -1,5 +1,5 @@
-# mern-auth
-Minimal full-stack MERN app with authentication using passport and JWTs.
+# Game Offers
+Minimal full-stack MERN app for searching online game offers with authentication using passport and JWTs.
 
 This project uses the following technologies:
 
